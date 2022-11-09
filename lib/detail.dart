@@ -28,7 +28,7 @@ class _detailState extends State<detail> {
     return SafeArea(
       child: Scaffold(
         body: WebView(
-          initialUrl: "${Provider.of<homeProvider>(context,listen: false).}",
+          initialUrl: "${Provider.of<homeProvider>(context,listen: false).data!.url}",
         ),
       ),
     );
